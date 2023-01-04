@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<form action="addproduct">
+
+<table align="center" bgcolor="cyan" width=400 height=200 border=2>
+  <caption >   Employee Form </caption>
+
+	<tr>  <td> ID</td> <td> <input type=text name="id" required>  </td></tr>
+	<tr>  <td> name </td> <td> <input type=text name="name" required>  </td></tr>
+	<tr>  <td> Manufacturing Date </td> <td> <input type="date" name="manufacturingdate" required>  </td></tr>
+	<tr>  <td> Use Before Months </td> <td> <input type=text name="usebeforemonths" required>  </td></tr>
+	<tr>  <td> Price </td> <td> <input type=text name="price" required>  </td></tr>
+	<tr>	<td> <input type=submit value="Add Product"> </td><td> </td></tr>
+	
+</table>
+</form>
+<br>
+<table align="center" bgcolor="cyan" width=400 height=100 border=2>
+<tr>  <td> <a href="getproductbyid.html"><button>getPorductById</button></a><br>
+<form action="getproducts">
+
+    <input type="submit" value="List Products">
+</form>
+</td>
+ <td><a href="deleteproduct.html"><button>Delete</button></a><br>
+ <form action="deleteexpired">
+ 	<input type="submit" value="Delete Expired">
+ </form>
+  </td>
+ <td><a href="updateproduct.html"><button>Update</button></a>
+ <form action="updateexpiredate">
+ <input type="submit" value="Update ExpireDate">
+ </form>
+  </td>
+</tr>
+</table>
+<br>
+<br>
+<center><form action="calculatediscount"><input type="submit" value="Update Products with Discount"></form></center>
+</body>
+</html>
